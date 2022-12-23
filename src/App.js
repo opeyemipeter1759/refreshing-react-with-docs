@@ -1,6 +1,13 @@
 import './App.css';
-
-function App() {
+import {useState} from "react"
+function App()
+{
+    const [count, setCount] = useState(0)
+    const handleClick = () =>
+    {
+        setCount(count+1)
+    }
+    
     const user = {
         name: 'Hedy Lamarr',
         imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
@@ -20,7 +27,9 @@ function App() {
         }}
             />
             <ProductList />
-            <MyBtn/>
+            <MyBtn count={count} onClick={handleClick} />
+            <MyBtn count={count} onClick={handleClick} />
+            
 
     </div>
   );
@@ -45,15 +54,12 @@ function ProductList()
       
 }
 
-function MyBtn() {
-    const handleClick = () =>
-    {
-        alert('clicked')
-    }
-    
+function MyBtn({count, onClick})
+{
+ 
     return (
-        <button onClick={handleClick}>
-            clicked me
+        <button onClick={onClick}>
+            you have clicked me {count} times
         </button>
     )
 }
