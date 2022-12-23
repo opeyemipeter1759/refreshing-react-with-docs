@@ -8,8 +8,6 @@ function App() {
     }
 
     return (
-      
-
     <div className="App">
        <h1>{user.name}</h1>
       <img
@@ -21,7 +19,9 @@ function App() {
           height: user.imageSize
         }}
             />
-            <ProductList/>
+            <ProductList />
+            <MyBtn/>
+
     </div>
   );
 }
@@ -39,9 +39,23 @@ function ProductList()
         </li>
     );
     return (
+        
         <ul>{listItems}</ul>
       );
       
+}
+
+function MyBtn() {
+    const handleClick = () =>
+    {
+        alert('clicked')
+    }
+    
+    return (
+        <button onClick={handleClick}>
+            clicked me
+        </button>
+    )
 }
 
 export default App;
