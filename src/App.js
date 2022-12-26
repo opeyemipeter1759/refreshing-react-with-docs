@@ -1,5 +1,6 @@
 import './App.css';
-import {useState} from "react"
+import { useState } from "react"
+import ProductTableD from './ProductTable';
 function App()
 {
     const [count, setCount] = useState(0)
@@ -29,6 +30,7 @@ function App()
             <ProductList />
             <MyBtn count={count} onClick={handleClick} />
             <MyBtn count={count} onClick={handleClick} />
+            <ProductTableD/>
             
 
     </div>
