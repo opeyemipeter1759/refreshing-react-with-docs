@@ -2,6 +2,7 @@ import './App.css';
 import { useState } from "react"
 import ProductTableD from './ProductTable';
 import Profile from "./props/avatar"
+import Gallery from './prop-task/prop';
 function App()
 {
     const [count, setCount] = useState(0)
@@ -31,7 +32,9 @@ function App()
             <ProductList />
             <MyBtn count={count} onClick={handleClick} />
             <MyBtn count={count} onClick={handleClick} />
-            <ProductTableD/>
+            <ProductTableD />
+            
+            <Gallery />
             
 <Profile/>
     </div>
