@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from "react"
 import ProductTableD from './ProductTable';
+import Profile from "./props/avatar"
 function App()
 {
     const [count, setCount] = useState(0)
@@ -32,7 +33,7 @@ function App()
             <MyBtn count={count} onClick={handleClick} />
             <ProductTableD/>
             
-
+<Profile/>
     </div>
   );
 }
