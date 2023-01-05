@@ -4,6 +4,8 @@ import ProductTableD from './ProductTable';
 import Profile from './props/avatar';
 import Gallery from './prop-task/prop';
 import PackingList from './conditionalRender/list';
+import List from './list/app'
+
 function App() {
   const [count, setCount] = useState(0);
   const handleClick = () => {
@@ -34,7 +36,8 @@ function App() {
       <ProductTableD />
       <Gallery />
       <Profile />
-      <PackingList />
+          <PackingList />
+          <List/>
     </div>
   );
 }
