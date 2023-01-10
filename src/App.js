@@ -4,7 +4,8 @@ import ProductTableD from './ProductTable';
 import Profile from './props/avatar';
 import Gallery from './prop-task/prop';
 import PackingList from './conditionalRender/list';
-import List from './list/app'
+import List from './list/app';
+import Events from './Events/event'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -36,8 +37,9 @@ function App() {
       <ProductTableD />
       <Gallery />
       <Profile />
-          <PackingList />
-          <List/>
+      <PackingList />
+          <List />
+          <Events/>
     </div>
   );
 }

@@ -5,7 +5,7 @@ export default function List() {
   const chemists = people.filter(person =>
     person.profession === 'chemist'
   );
-  const listItems = chemists.map(person =>
+  const listItems = people.map(person =>
     <li>
       <img
         src={getImageUrl(person)}
