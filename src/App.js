@@ -6,6 +6,7 @@ import Gallery from './prop-task/prop';
 import PackingList from './conditionalRender/list';
 import List from './list/app';
 import Events from './Events/event'
+import StateGallery from './states/states'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -39,7 +40,8 @@ function App() {
       <Profile />
       <PackingList />
           <List />
-          <Events/>
+          <Events />
+          <StateGallery />
     </div>
   );
 }
