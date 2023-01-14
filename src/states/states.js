@@ -3,7 +3,22 @@ import { sculptureList } from './data.js';
 
 export default function Gallery() {
   const [index, setIndex] = useState(0);
-  const [showMore, setShowMore] = useState(false);
+    const [showMore, setShowMore] = useState( false );
+    
+    let hasPrev = index > 0;
+
+    let hasNext = index < sculptureList.length - 1;
+    function handlePrevClick() {
+        if (hasPrev) {
+          setIndex(index - 1);
+        }
+      }
+    
+      function handleNextClick() {
+        if (hasNext) {
+          setIndex(index + 1);
+        }
+      }
 
   function handleNextClick() {
     setIndex(index + 1);
@@ -16,7 +31,16 @@ export default function Gallery() {
   let sculpture = sculptureList[index];
   return (
     <>
-      <button onClick={handleNextClick}>
+     <button
+        onClick={handlePrevClick}
+        disabled={!hasPrev}
+      >
+        Previous
+      </button>
+      <button
+        onClick={handleNextClick}
+        disabled={!hasNext}
+      >
         Next
       </button>
       <h2>

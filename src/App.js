@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>{user.name}</h1>
+      {/* <h1>{user.name}</h1>
       <img
         className='avatar'
         src={user.imageUrl}
@@ -31,16 +31,16 @@ function App() {
           width: user.imageSize,
           height: user.imageSize,
         }}
-      />
+      /> */}
       {/* <ProductList />
             <MyBtn count={count} onClick={handleClick} />
             <MyBtn count={count} onClick={handleClick} /> */}
-      <ProductTableD />
+      {/* <ProductTableD />
       <Gallery />
       <Profile />
       <PackingList />
           <List />
-          <Events />
+          <Events /> */}
           <StateGallery />
     </div>
   );
