@@ -7,7 +7,7 @@ import PackingList from './conditionalRender/list';
 import List from './list/app';
 import Events from './Events/event'
 import StateGallery from './states/states'
-import FeedbackForm from './states/stateContra.js'
+import  { Form, FeedbackForm } from './states/stateContra.js'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -44,6 +44,7 @@ function App() {
           <Events /> */}
           <StateGallery />
           <FeedbackForm />
+          <Form/>
     </div>
   );
 }
