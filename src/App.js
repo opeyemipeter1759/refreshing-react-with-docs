@@ -9,6 +9,7 @@ import Events from './Events/event'
 import StateGallery from './states/states'
 import  { Form, FeedbackForm } from './states/stateContra.js'
 import Accordion from './states/liftingState'
+import FilterableList from './states/filterList'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -43,10 +44,12 @@ function App() {
       <PackingList />
           <List />
           <Events /> */}
-          <StateGallery />
+          {/* <StateGallery />
           <FeedbackForm />
           <Form />
-          <Accordion/>
+          <Accordion/> */}
+
+          <FilterableList/>
     </div>
   );
 }
