@@ -8,6 +8,7 @@ import List from './list/app';
 import Events from './Events/event'
 import StateGallery from './states/states'
 import  { Form, FeedbackForm } from './states/stateContra.js'
+import Accordion from './states/liftingState'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -44,7 +45,8 @@ function App() {
           <Events /> */}
           <StateGallery />
           <FeedbackForm />
-          <Form/>
+          <Form />
+          <Accordion/>
     </div>
   );
 }
@@ -66,3 +68,6 @@ function MyBtn({ count, onClick }) {
 }
 
 export default App;
+
+
+
