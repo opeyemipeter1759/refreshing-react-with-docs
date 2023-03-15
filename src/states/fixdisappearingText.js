@@ -13,30 +13,29 @@ export default function App() {
       {showHint && (
         <p>
           <i>Hint: Your favorite city?</i>
-              </p>
+        </p>
       )}
-          <Form />
-          
-          {showHint ? 
-              (  <button
-            onClick={() => {
-              setShowHint(false);
-            }}
-          >
-            Hide hint
-              </button> ):(
-          <button
-                  onClick={() => {
-                    setShowHint(true);
-                  }}
-                >
-                  Show hint
-                </button>         
-          ) 
-        }
-    </div>
-  )
+      <Form />
 
+      {showHint ? (
+        <button
+          onClick={() => {
+            setShowHint(false);
+          }}
+        >
+          Hide hint
+        </button>
+      ) : (
+        <button
+          onClick={() => {
+            setShowHint(true);
+          }}
+        >
+          Show hint
+        </button>
+      )}
+    </div>
+  );
 }
 
 function Form() {
